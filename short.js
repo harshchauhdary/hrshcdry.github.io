@@ -14,7 +14,6 @@ new Vue({
         fixedurl:'',
         stored:[],
         reduced:window.location.hostname,
-        
         windowurl:''
         
         
@@ -22,7 +21,7 @@ new Vue({
 
     mounted(){
 
-            if(window.location.hash!=''){
+            if(window.location.hash!="" ){
                 windowurl = window.location.hash;
                windowurl = windowurl.replace('#','');
                 console.log(endpoint+'?q=hash:'+windowurl);
@@ -41,7 +40,7 @@ new Vue({
         buildurl(url){
             if(this.url!=""){
             urlhash = Math.random().toString(36).substring(9);
-            this.finalurl = this.reduced+"/#"+urlhash;
+            this.finalurl = this.reduced+"#"+urlhash;
             console.log(this.finalurl);
             this.longurl=this.checkurl();
             this.posturl(this.urlhash,this.longurl)
