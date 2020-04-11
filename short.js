@@ -19,6 +19,7 @@ new Vue({
             if(window.location.hash!=''){
                 windowurl = window.location.hash
                 console.log(windowurl)
+                windowurl.replace('#','')
                 fetch(windowurl)  
             }
     },
