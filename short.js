@@ -18,9 +18,9 @@ new Vue({
 
             if(window.location.hash!=''){
                 windowurl = window.location.hash
-                console.log(windowurl)
-                windowurl.replace('#','')
-                fetch(windowurl)  
+                console.log(windowurl);
+                windowurl.replace('#','');
+                this.fetch(windowurl)  
             }
     },
 
@@ -30,7 +30,7 @@ new Vue({
             urlhash = Math.random().toString(36).substring(9);
             
             finalurl = this.shortr+"#"+urlhash
-            console.log(finalurl)
+            console.log(finalurl);
             longurl=this.longurl
 
             this.posturl(urlhash,longurl)
@@ -44,7 +44,7 @@ new Vue({
                 
             })
             .then(function(response){
-                console.log(response)
+                console.log(response);
             });
             
         },
