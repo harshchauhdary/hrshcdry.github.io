@@ -39,8 +39,8 @@ new Vue({
 
         buildurl(url){
             if(this.url!=""){
-            urlhash = Math.random().toString(36).substring(9);
-            this.finalurl = this.reduced+"#"+urlhash;
+            this.urlhash = Math.random().toString(36).substring(9);
+            this.finalurl = this.reduced+"/#"+this.urlhash;
             console.log(this.finalurl);
             this.longurl=this.checkurl();
             this.posturl(this.urlhash,this.longurl)
@@ -64,8 +64,8 @@ new Vue({
     
         posturl(urlhash,longurl){
             axios.post(endpoint,{
-                hash:urlhash,
-                link:longurl
+                hash:this.urlhash,
+                link:this.longurl
                 
             })
             .then(response=>{
