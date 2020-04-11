@@ -17,11 +17,15 @@ new Vue({
     mounted(){
 
             if(window.location.hash!=''){
-                windowurl = window.location.hash
-                
-                windowurl.replace('#','');
-                console.log(windowurl);
-                this.fetch(windowurl)
+                windowurl = window.location.hash;
+               windowurl = windowurl.replace('#','');
+                console.log(endpoint+'?q=hash:'+windowurl);
+                axios.get(endpoint+'?q=hash:'+windowurl)
+            .then(function(response){
+            console.log(response.data[0].link);
+            var redirecturl = response.data[0].link;
+            window.location.assign(redirecturl);
+            });                
 
             }
     },
@@ -31,9 +35,9 @@ new Vue({
         buildurl(){
             urlhash = Math.random().toString(36).substring(9);
             
-            finalurl = this.shortr+"#"+urlhash
+            finalurl = this.shortr+"#"+urlhash;
             console.log(finalurl);
-            longurl=this.longurl
+            longurl=this.longurl;
 
             this.posturl(urlhash,longurl)
         },
@@ -52,12 +56,7 @@ new Vue({
         },
 
         fetch(windowurl){
-            axios.get(endpoint+'?q=hash:'+windowurl)
-            .then(function(response){
-                console.log(response.data[0].link);
-                var redirecturl = response.data[0].link
-                window.location.replace(redirecturl);
-            });
+            
         }
 
         
