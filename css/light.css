@@ -1,8 +1,20 @@
 
 :root{
-  --primary-color: white;
-  --secondary-color: #212121;
+  --primary-white: #ffffff;
+  --primary-black: #000;
+  --primary-purple : #7735f6;
+  --primary-grey: #424242;
+  --primary-tomato : #f55555;
+
+
+  --secondary-white: #ffffff;
+  --secondary-black: #000;
+  --secondary-purple : #7735f6;
+  --secondary-grey: #212121;
+  --secondary-tomato : #f55555;
+  
 }
+
 
 
 body {
@@ -11,7 +23,20 @@ body {
   transition: background 0.15s ease-in;
   max-width: 100%;
   overflow-x: hidden;
+  background-color: var(--primary-white);
+  color: var(--primary-black);
 }
+
+body.night{
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.15s ease-in;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--secondary-grey);
+  color: var(--secondary-white);
+}
+
 .main-title {
   font-weight: 800;
 }
@@ -43,6 +68,7 @@ body {
 a {
   text-decoration: none;
   position: relative;
+  margin-top: 1rem;
 }
 @-webkit-keyframes highlight {
   0% {
@@ -77,17 +103,14 @@ a {
   }
 }
 ::-moz-selection {
-  background: #5c28df;
-  color: #fff;
+  color: var(--primary-white);
 }
 
 
 .f6 svg {
   padding-right: 15px;
 }
-body {
-  font-family: Blacker, arial, sans-serif;
-}
+
 
 h1 {
   font-size: 34px;
@@ -97,9 +120,12 @@ h1 {
 a {
   display: inline-block;
   text-decoration: underline;
-  color: #000;
+  color: var(--primary-black);
   line-height: 1.5;
 }
+
+
+
 @keyframes cylon {
   0% {
     left: 0;
@@ -122,8 +148,8 @@ a {
 }
 
 ::selection {
-  color: #fff;
-  background: #000;
+  color: var(--primary-white);
+  background:var(--primary-black);
 }
 a:hover {
   outline: 0;
@@ -147,13 +173,13 @@ a:hover {
   border-radius: 12px;
 }
 .project-card {
-  background-color: #7735f6;
+  background-color: var(--primary-purple);
 }
 .sand {
-  background-color: #242424 !important;
+  background-color: var(--primary-grey) !important;
 }
 .pink {
-  background-color: #f55555;
+  background-color: var(--primary-tomato);
 }
 .project {
   position: relative;
@@ -232,7 +258,7 @@ a:hover {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: #fff;
+  color: var(--primary-white);
   padding: 12px 16px;
   border-radius: 3px;
   -webkit-transition: background-color 80ms ease;
@@ -244,10 +270,10 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .light svg {
-  color: #fff !important;
+  color: var(--primary-white) !important;
 }
 .light svg:hover {
-  color: #fff !important;
+  color: var(--primary-white) !important;
 }
 .margin-reset {
   margin: 0;
@@ -258,10 +284,10 @@ a:hover {
 .info > h5 {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
-  color: #fff;
+  color: var(--primary-white);
 }
 .ml3 {
-  color: #fff;
+  color: var(--primary-white);
   text-decoration: none;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
@@ -273,6 +299,8 @@ h2 {
 h1 {
   font-weight: 800;
 }
+
+
 h3 {
   font-weight: 800;
 }
@@ -280,13 +308,31 @@ h3 {
   padding-bottom: 0;
 }
 label {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--primary-black);
+  color: var(--primary-white);
   font-weight: 800;
   padding: 0.4rem 0.8rem;
   border-radius: 0.3rem;
   font-family: Montserrat, sans-serif;
 }
+
+label.night{
+  background-color: var(--secondary-white);
+  color: var(--secondary-black);
+  font-weight: 800;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  font-family: Montserrat, sans-serif;
+}
+
+button{
+  outline: none;
+  
+}
+button:hover{
+  outline: none;
+}
+
 .block p {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
@@ -294,6 +340,13 @@ label {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
+
+body p{
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: x-large;
+}
+
 .sub-section h2 {
   font-family: "Calibre Web";
   font-weight: 600;
@@ -301,7 +354,7 @@ label {
   padding-bottom: 0;
 }
 .light {
-  color: #000 !important;
+  color: var(--primary-black) !important;
 }
 .light-p {
   color: rgba(0, 0, 0, 0.88);
@@ -351,3 +404,8 @@ label {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
   }
 }
+
+
+
+
+
