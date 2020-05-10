@@ -207,10 +207,11 @@ a:hover {
 .project > .image {
   position: absolute;
   content: " ";
-  top: 1px;
-  right: 0;
+  top: 50px;
+  right: -10px;
   height: 115%;
   width: 50%;
+  border-radius: 0.5rem;
   background-size: cover;
   background-position: left -48px;
   background-repeat: no-repeat;
@@ -300,7 +301,7 @@ a:hover {
   font-weight: 500;
 }
 h2 {
-  font-weight: 800;
+  font-weight: 900;
   text-decoration: underline;
 }
 h1 {
@@ -312,6 +313,18 @@ h3 {
 .sub-section h1 {
   padding-bottom: 0;
 }
+
+label{
+background-color: #000;
+color: #fff;
+font-weight: 800;
+padding: .4rem .8rem;
+border-radius: .3rem;
+
+font-family: 'Montserrat', sans-serif;
+
+}
+
 .block p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
