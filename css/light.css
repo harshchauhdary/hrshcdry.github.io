@@ -1,5 +1,12 @@
+
+:root{
+  --primary-color: white;
+  --secondary-color: #212121;
+}
+
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   transition: background 0.15s ease-in;
   max-width: 100%;
@@ -8,9 +15,7 @@ body {
 .main-title {
   font-weight: 800;
 }
-.sub-text {
-  font-family: "Calibre Web", sans-serif;
-}
+
 @keyframes wobble {
   from {
     transform: none;
@@ -34,21 +39,7 @@ body {
     transform: none;
   }
 }
-.blue {
-  color: #2267ff;
-}
-.bg-blue {
-  background: #2267ff;
-}
-.button-font {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  line-height: 300%;
-  display: inline-block;
-  letter-spacing: 0.5px;
-  padding: 0 16px;
-  font-weight: 700;
-}
+
 a {
   text-decoration: none;
   position: relative;
@@ -89,20 +80,15 @@ a {
   background: #5c28df;
   color: #fff;
 }
-.svg-icon {
-  color: #fff;
-  height: 12px;
-  padding-left: 5px;
-}
-.blue-link {
-  color: #828997;
-}
+
+
 .f6 svg {
   padding-right: 15px;
 }
 body {
   font-family: Blacker, arial, sans-serif;
 }
+
 h1 {
   font-size: 34px;
   font-weight: 700;
@@ -134,29 +120,10 @@ a {
     width: 2px;
   }
 }
-svg {
-  color: #828997;
-}
+
 ::selection {
   color: #fff;
   background: #000;
-}
-.social-icon {
-  display: flex;
-  width: 30px;
-  height: auto;
-  margin-right: 24px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
 }
 a:hover {
   outline: 0;
@@ -185,8 +152,7 @@ a:hover {
 .sand {
   background-color: #242424 !important;
 }
-
-.pink{
+.pink {
   background-color: #f55555;
 }
 .project {
@@ -290,14 +256,14 @@ a:hover {
   padding-bottom: 1.5rem;
 }
 .info > h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   color: #fff;
 }
 .ml3 {
   color: #fff;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
 }
 h2 {
@@ -313,20 +279,16 @@ h3 {
 .sub-section h1 {
   padding-bottom: 0;
 }
-
-label{
-background-color: #000;
-color: #fff;
-font-weight: 800;
-padding: .4rem .8rem;
-border-radius: .3rem;
-
-font-family: 'Montserrat', sans-serif;
-
+label {
+  background-color: #000;
+  color: #fff;
+  font-weight: 800;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  font-family: Montserrat, sans-serif;
 }
-
 .block p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: medium;
   margin-bottom: 0.5rem;
@@ -337,10 +299,6 @@ font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   margin: 0;
   padding-bottom: 0;
-}
-.social {
-  height: 25px;
-  width: 25px;
 }
 .light {
   color: #000 !important;
@@ -392,20 +350,4 @@ font-family: 'Montserrat', sans-serif;
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
   }
-}
-
-.hire-me {
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 5px 10px 6px;
-  border-radius: 4px;
-  margin-right: 5px;
-  font-size: 1rem;
 }
