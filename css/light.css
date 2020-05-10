@@ -3,19 +3,23 @@
   --primary-white: #ffffff;
   --primary-black: #000;
   --primary-purple : #7735f6;
-  --primary-grey: #424242;
+  --primary-grey: #455a64;
   --primary-tomato : #f55555;
 
 
   --secondary-white: #ffffff;
   --secondary-black: #000;
   --secondary-purple : #7735f6;
-  --secondary-grey: #212121;
+  --secondary-grey: #121212;
   --secondary-tomato : #f55555;
   
 }
 
+.theme{
+  float: right;
+  padding-top: .5rem;
 
+}
 
 body {
   font-family: Montserrat, sans-serif;
@@ -39,6 +43,8 @@ body.night{
 
 .main-title {
   font-weight: 800;
+  font-size: xxx-large;
+  max-width: 70%;
 }
 
 @keyframes wobble {
@@ -181,17 +187,7 @@ a:hover {
 .pink {
   background-color: var(--primary-tomato);
 }
-.project {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 80px;
-  overflow: hidden;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: transform 0.14s ease;
-  transition: transform 0.14s ease;
-}
+
 .project > .info {
   max-width: 310px;
   pointer-events: auto;
@@ -235,6 +231,7 @@ a:hover {
 .project + .project {
   margin-top: 32px;
 }
+
 @media (max-width: 800px) {
   .project {
     padding: 48px 32px;
@@ -343,7 +340,7 @@ button:hover{
 
 body p{
   font-family: Montserrat, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: x-large;
 }
 
