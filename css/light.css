@@ -232,13 +232,19 @@ a:hover {
   margin-top: 32px;
 }
 
-@media (max-width: 800px) {
+.mw8{
+  max-width: 58rem;
+}
+
+@media (max-width: 1100px) {
   .project {
     padding: 48px 32px;
     width: calc(100%);
     -webkit-transform: scale(1) !important;
     transform: scale(1) !important;
   }
+
+
   .project,
   .project:after {
     border-radius: 3;
@@ -249,6 +255,7 @@ a:hover {
   .project + .project {
     margin-top: 1rem;
   }
+
 }
 .button {
   position: relative;
