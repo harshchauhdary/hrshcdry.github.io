@@ -17,7 +17,7 @@
 
 .theme{
   float: right;
-  padding-top: .5rem;
+  padding-top: 1rem;
 
 }
 
@@ -363,52 +363,6 @@ body p{
 .light-p {
   color: rgba(0, 0, 0, 0.88);
 }
-.main-title {
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-  transform: translateY(-50px);
-  opacity: 0;
-  animation-name: titleAnimation;
-  animation-timing-function: ease;
-  animation-duration: 3s;
-}
-.main-title {
-  animation-delay: 0.6s;
-  -webkit-animation-fill-mode: forwards;
-}
-.main-title:first-child {
-  animation-delay: 0.7s;
-}
-.main-title:last-child {
-  animation-delay: 0.5s;
-}
-@keyframes titleAnimation {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-  }
-  20% {
-    transform: translateY(0);
-    opacity: 1;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-  }
-  80% {
-    transform: translateY(0);
-    opacity: 1;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-  }
-}
-
 
 
 
