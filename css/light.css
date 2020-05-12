@@ -15,16 +15,17 @@
   
 }
 
-.theme-light{
+.theme{
+  padding-top: 0rem;
   float: right;
-  padding-top: 1rem;
+}
+
+.theme-light{
   display: block;
-  
 
 }
 .theme-night{
-  float: right;
-  padding-top: 1rem;
+
   display:none ;
 
 }
@@ -63,7 +64,7 @@ body.night{
 
 .main-title {
   font-weight: 800;
-  font-size: xxx-large;
+  font-size: xx-large;
   max-width: 70%;
 }
 
@@ -374,7 +375,7 @@ button:hover{
 body p{
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: x-large;
+  font-size: 24px;
   line-height: 35px;
 }
 
