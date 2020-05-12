@@ -364,6 +364,11 @@ button:hover{
   padding: 10px 15px;
   cursor: pointer;
 }
+.blog.night{
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
 
 body p{
   font-family: 'Inter', sans-serif;
