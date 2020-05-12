@@ -34,12 +34,16 @@
 svg.social path {
   fill: #212121;
   outline: none;
+
+  border: none;
 }
 
 
 
 svg.social.night path {
   fill: rgb(190, 190, 190);
+  outline: none;
+  border: none;
 }
 
 
@@ -139,6 +143,7 @@ a {
 .f6 svg {
   padding-right: 15px;
   outline: none;
+  border: none;
 }
 
 
@@ -283,9 +288,13 @@ a:hover {
 }
 .light svg {
   color: var(--primary-white) !important;
+  outline: none;
+  border: none;
 }
 .light svg:hover {
   color: var(--primary-white) !important;
+  outline: none;
+  border: none;
 }
 .margin-reset {
   margin: 0;
@@ -355,7 +364,7 @@ button:hover{
 
 .bio{
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 22px;
   line-height: 35px;
 }
@@ -363,6 +372,7 @@ button:hover{
 .blog{
   padding: 10px 15px;
   cursor: pointer;
+  
 }
 .blog.night{
   padding: 10px 15px;
