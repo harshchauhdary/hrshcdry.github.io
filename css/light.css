@@ -65,7 +65,7 @@ body.night{
 .main-title {
   font-weight: 800;
   font-size: xx-large;
-  max-width: 70%;
+  max-width: 80%;
 }
 
 @keyframes wobble {
@@ -372,11 +372,18 @@ button:hover{
   margin-top: 0.5rem;
 }
 
+.bio{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 35px;
+}
+
 body p{
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 24px;
-  line-height: 35px;
+  line-height: 25px;
 }
 
 .sub-section h2 {
