@@ -1,34 +1,28 @@
-
-:root{
+:root {
   --primary-white: #ffffff;
   --primary-black: #000;
-  --primary-purple : #7735f6;
+  --primary-purple: #7735f6;
   --primary-grey: #455a64;
-  --primary-tomato : #f55555;
-
+  --primary-tomato: #f55555;
 
   --secondary-white: #ffffff;
   --secondary-black: #000;
-  --secondary-purple : #7735f6;
+  --secondary-purple: #7735f6;
   --secondary-grey: #121212;
-  --secondary-tomato : #f55555;
-  
+  --secondary-tomato: #f55555;
 }
 
-.theme{
+.theme {
   padding-top: 0rem;
   float: right;
   cursor: pointer;
 }
 
-.theme-light{
+.theme-light {
   display: block;
-
 }
-.theme-night{
-
-  display:none ;
-
+.theme-night {
+  display: none;
 }
 
 svg.social path {
@@ -38,14 +32,11 @@ svg.social path {
   border: none;
 }
 
-
-
 svg.social.night path {
   fill: rgb(190, 190, 190);
   outline: none;
   border: none;
 }
-
 
 body {
   font-family: Montserrat, sans-serif;
@@ -57,7 +48,7 @@ body {
   color: var(--primary-black);
 }
 
-body.night{
+body.night {
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   transition: background 0.15s ease-in;
@@ -139,13 +130,11 @@ a {
   color: var(--primary-white);
 }
 
-
 .f6 svg {
   padding-right: 15px;
   outline: none;
   border: none;
 }
-
 
 h1 {
   font-size: 34px;
@@ -158,8 +147,6 @@ a {
   color: var(--primary-black);
   line-height: 1.5;
 }
-
-
 
 @keyframes cylon {
   0% {
@@ -184,7 +171,7 @@ a {
 
 ::selection {
   color: var(--primary-white);
-  background:var(--primary-black);
+  background: var(--primary-black);
 }
 a:hover {
   outline: 0;
@@ -217,8 +204,8 @@ a:hover {
   background-color: var(--primary-tomato);
 }
 
-.cyan{
-  background-color:#00BFA5;
+.cyan {
+  background-color: #00bfa5;
 }
 
 .project > .info {
@@ -265,10 +252,9 @@ a:hover {
   margin-top: 32px;
 }
 
-.mw8{
+.mw8 {
   max-width: 58rem;
 }
-
 
 .button {
   position: relative;
@@ -293,7 +279,7 @@ a:hover {
 }
 .light svg:hover {
   color: var(--primary-white) !important;
-  outline: none;
+  outline: none !important;
   border: none;
 }
 .margin-reset {
@@ -321,7 +307,6 @@ h1 {
   font-weight: 800;
 }
 
-
 h3 {
   font-weight: 800;
 }
@@ -337,7 +322,7 @@ label {
   font-family: Montserrat, sans-serif;
 }
 
-label.night{
+label.night {
   background-color: var(--secondary-white);
   color: var(--secondary-black);
   font-weight: 800;
@@ -346,11 +331,10 @@ label.night{
   font-family: Montserrat, sans-serif;
 }
 
-button{
+button {
   outline: none;
-  
 }
-button:hover{
+button:hover {
   outline: none;
 }
 
@@ -362,26 +346,24 @@ button:hover{
   margin-top: 0.5rem;
 }
 
-.bio{
-  font-family: 'Inter', sans-serif;
+.bio {
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 35px;
 }
 
-.blog{
+.blog {
   padding: 10px 15px;
   cursor: pointer;
-  
 }
-.blog.night{
+.blog.night {
   padding: 10px 15px;
   cursor: pointer;
 }
 
-
-body p{
-  font-family: 'Inter', sans-serif;
+body p {
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 25px;
@@ -400,9 +382,6 @@ body p{
   color: rgba(0, 0, 0, 0.88);
 }
 
-
-
-
 @media (max-width: 1100px) {
   .project {
     padding: 48px 32px;
@@ -410,7 +389,6 @@ body p{
     -webkit-transform: scale(1) !important;
     transform: scale(1) !important;
   }
-
 
   .project,
   .project:after {
@@ -422,5 +400,4 @@ body p{
   .project + .project {
     margin-top: 1rem;
   }
-
 }
